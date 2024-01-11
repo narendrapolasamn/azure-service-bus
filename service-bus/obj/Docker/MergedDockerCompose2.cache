@@ -1,0 +1,18 @@
+name: dockercompose16719124284669218344
+services:
+  car.api:
+    build:
+      context: C:\Users\naren\Downloads\.NetCore\Azure\service-bus
+      dockerfile: CarCatlog/Car.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: carapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose16719124284669218344_default

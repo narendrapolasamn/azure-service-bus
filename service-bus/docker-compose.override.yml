@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  reservationdb:
+    restart: always
+    ports:
+        - "6379:6379"
+
+  cardb:
+    environment:
+        SA_PASSWORD: "Password$1234"
+        ACCEPT_EULA: "Y"
+    restart: always
+    ports:
+        - "5445:1433"
+  
+  car.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8008:80"
+    depends_on:
+      - cardb
+
+  reservation.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8009:80"
+    depends_on:
+      - reservationdb
+

@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  car.api:
+    image: ${DOCKER_REGISTRY-}carapi
+    build:
+      context: .
+      dockerfile: CarCatlog/Car.API/Dockerfile
+
+  reservation.api:
+    image: ${DOCKER_REGISTRY-}reservationapi
+    build:
+      context: .
+      dockerfile: Reservation/Reservation.API/Dockerfile
+
+  reservationdb:
+    image: redis:latest
+
+  cardb:
+    image: mcr.microsoft.com/mssql/server:2017-latest  
+

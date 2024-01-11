@@ -1,0 +1,12 @@
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\bin\Debug\net6.0\EventBus.deps.json
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\bin\Debug\net6.0\EventBus.dll
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\bin\Debug\net6.0\EventBus.pdb
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\EventBus.csproj.AssemblyReference.cache
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\EventBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\EventBus.AssemblyInfoInputs.cache
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\EventBus.AssemblyInfo.cs
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\EventBus.csproj.CoreCompileInputs.cache
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\EventBus.dll
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\refint\EventBus.dll
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\EventBus.pdb
+C:\Users\naren\Downloads\.NetCore\Azure\service-bus\BuildingBlocks\EventBus\obj\Debug\net6.0\ref\EventBus.dll

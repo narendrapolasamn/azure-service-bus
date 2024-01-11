@@ -1,0 +1,41 @@
+name: dockercompose16719124284669218344
+services:
+  car.api:
+    build:
+      context: C:\Users\naren\Downloads\.NetCore\Azure\service-bus
+      dockerfile: CarCatlog/Car.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: carapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8008"
+        protocol: tcp
+  cardb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      default: null
+  reservation.api:
+    build:
+      context: C:\Users\naren\Downloads\.NetCore\Azure\service-bus
+      dockerfile: Reservation/Reservation.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: reservationapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8009"
+        protocol: tcp
+  reservationdb:
+    image: redis:latest
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose16719124284669218344_default
